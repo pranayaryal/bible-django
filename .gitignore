@@ -225,3 +225,5 @@ tags
 .idea/
 
 .pytest_cache/
+
+embeddings-venv/
