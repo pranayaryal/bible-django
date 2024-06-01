@@ -16,7 +16,7 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='JobDescription',
             fields=[
-                ('id', models.UUIDField(default=uuid.uuid4, editable=False, primary_key=True, serialize=False)),
+                ('id', models.UUIDField(default=uuid.uuid4, editable=False, primary_key=True)),
                 ('datetime_created', models.DateTimeField(auto_now_add=True)),
                 ('last_edited', models.DateTimeField(auto_now=True)),
                 ('title', models.CharField(max_length=255)),
@@ -33,7 +33,7 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='JobDescriptionChunk',
             fields=[
-                ('id', models.UUIDField(default=uuid.uuid4, editable=False, primary_key=True, serialize=False)),
+                ('id', models.UUIDField(default=uuid.uuid4, editable=False, primary_key=True)),
                 ('datetime_created', models.DateTimeField(auto_now_add=True)),
                 ('last_edited', models.DateTimeField(auto_now=True)),
                 ('chunk', models.TextField()),
